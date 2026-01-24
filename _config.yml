@@ -1,0 +1,7 @@
+theme: minima
+title: Giovanni Tshibangu
+header_pages:
+  - index.md
+  - _projects.md
+  - about.md
+  - resume.md
