@@ -1,7 +1,10 @@
-theme: minima
 title: Giovanni Tshibangu
+description: Data Science Portfolio
+theme: jekyll-theme-cayman
+
+# Navigation (only shows if theme supports it; still good to keep)
 header_pages:
   - index.md
-  - _projects.md
+  - projects.md
   - about.md
   - resume.md

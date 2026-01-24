@@ -1,0 +1,66 @@
+/* ---------- Accent color (change this) ---------- */
+:root {
+  --accent: #8b5cf6; /* purple */
+  --accent-2: #a78bfa;
+}
+
+/* Cayman theme accent overrides */
+a {
+  color: var(--accent);
+}
+a:hover {
+  color: var(--accent-2);
+}
+
+.page-header {
+  background-image: none !important;
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 1),
+    rgba(167, 139, 250, 1)
+  ) !important;
+}
+
+/* ---------- Dark mode ---------- */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0b0b0f !important;
+    color: #e9e9ee !important;
+  }
+
+  .main-content {
+    background: transparent !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #f3f3f7 !important;
+  }
+
+  .page-header {
+    color: #ffffff !important;
+  }
+
+  .page-header .project-name,
+  .page-header .project-tagline {
+    color: #ffffff !important;
+  }
+
+  code,
+  pre {
+    background: #141420 !important;
+    color: #f1f1f6 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  table {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+  }
+
+  th,
+  td {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+  }
+}
