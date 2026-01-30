@@ -19,6 +19,7 @@ Each project below is designed as a **real-world case study**, not a classroom a
 - Churn prediction
 - Risk modeling
 - Cost-sensitive evaluation
+- [Telco Customer Churn EDA](/projects/telco-churn-eda)
 
 ## 📈 Multivariate Analytics
 
