@@ -2,96 +2,87 @@
 title: Telco Customer Churn EDA
 ---
 
-# Telco Customer Churn EDA
+<section class="hero">
+  <h1 class="hero-title">Telco Customer Churn EDA</h1>
+  <p class="hero-subtitle"><strong>Exploratory analysis of churn signals and risk segments.</strong></p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="https://github.com/giosroom99/telco-churn-eda">Repository</a>
+    <a class="btn btn-ghost" href="https://github.com/giosroom99/telco-churn-eda/blob/main/notebooks/01_telco_churn_eda.ipynb">Notebook</a>
+  </div>
+</section>
 
-**Skills:** Python, Pandas, EDA, Data Cleaning, Statistical Testing, Visualization  
-**Repo:** [Repository](https://github.com/giosroom99/telco-churn-eda)  
-**Notebook:** [notebooks/01_telco_churn_eda.ipynb](https://github.com/giosroom99/telco-churn-eda/blob/main/notebooks/01_telco_churn_eda.ipynb)
+<section class="section">
+  <h2 class="section-title">Project Summary</h2>
+  <div class="panel">
+    <p>
+      This project explores the IBM Telco Customer Churn dataset to uncover the strongest churn
+      signals across tenure, contract type, and service add-ons. The goal is to identify segments
+      where retention efforts yield the highest impact.
+    </p>
+    <p>
+      <strong>Skills:</strong> Python, Pandas, EDA, Data Cleaning, Statistical Testing, Visualization
+    </p>
+  </div>
+</section>
 
----
+<section class="section">
+  <h2 class="section-title">Data</h2>
+  <div class="grid">
+    <div class="card">
+      <strong>Source</strong>
+      <p>IBM Telco Customer Churn dataset</p>
+    </div>
+    <div class="card">
+      <strong>Rows / Columns</strong>
+      <p>7,043 rows, 21 columns</p>
+    </div>
+    <div class="card">
+      <strong>Target</strong>
+      <p>Churn (Yes/No)</p>
+    </div>
+    <div class="card">
+      <strong>Key Features</strong>
+      <p>tenure, MonthlyCharges, TotalCharges, Contract, PaymentMethod</p>
+    </div>
+  </div>
+</section>
 
-## 1) Problem
+<section class="section">
+  <h2 class="section-title">Exploratory Analysis</h2>
+  <div class="panel">
+    <ul>
+      <li>Target balance and churn rate distribution</li>
+      <li>Numeric distributions for tenure and charges</li>
+      <li>Churn rates by contract type and service bundle</li>
+    </ul>
+  </div>
+</section>
 
-Which customer segments and service attributes are most associated with churn, and where should retention efforts be prioritized?
+<section class="section">
+  <h2 class="section-title">Key Insights</h2>
+  <div class="grid">
+    <div class="card">
+      <strong>Contract Sensitivity</strong>
+      <p>Month-to-month customers churn at much higher rates than long-term contracts.</p>
+    </div>
+    <div class="card">
+      <strong>Tenure Effects</strong>
+      <p>Churn risk is concentrated early in customer tenure.</p>
+    </div>
+    <div class="card">
+      <strong>Add-on Impact</strong>
+      <p>Security and support add-ons are correlated with lower churn.</p>
+    </div>
+  </div>
+</section>
 
----
-
-## 2) Data
-
-- **Source:** IBM Telco Customer Churn dataset (file: `WA_Fn-UseC_-Telco-Customer-Churn.csv`)
-- **Rows / Columns:** 7,043 rows, 21 columns
-- **Target / Label:** `Churn` (Yes/No)
-- **Key features:** tenure, MonthlyCharges, TotalCharges, Contract, PaymentMethod, InternetService, TechSupport, OnlineSecurity
-
-### Data cleaning
-
-- Missing values strategy: convert `TotalCharges` to numeric and fill missing values (from blank strings) with 0
-- Outlier handling: not applied (EDA focus)
-- Encoding: standardize `Churn`, map `SeniorCitizen` to Yes/No
-- Train/validation split strategy: not applicable (EDA only)
-
----
-
-## 3) Exploratory Data Analysis
-
-Show 3-6 key visuals:
-
-- Target balance (churn rate and counts)
-- Numeric distributions (tenure, MonthlyCharges, TotalCharges)
-- Churn rate by key categories (Contract, PaymentMethod, InternetService, TechSupport, OnlineSecurity)
-
-**Key insights:**
-
-- Churn is more concentrated in certain contract and service segments.
-- Shorter-tenure customers show different churn behavior than long-tenure customers.
-- Customers with fewer support/security add-ons show higher churn risk.
-
----
-
-## 4) Modeling
-
-### Baseline
-
-- Not included (EDA-only scope)
-
-### Final models tried
-
-- Not included (EDA-only scope)
-
-### Feature engineering
-
-- Not included (EDA-only scope)
-
----
-
-## 5) Evaluation
-
-- Not included (EDA-only scope)
-
-**Business framing:**  
-Future modeling would weigh false negatives (missed churners) more heavily than false positives.
-
----
-
-## 6) Results and Takeaways
-
-- EDA identifies which segments show the strongest churn signals for targeted retention.
-- Key drivers are service type, contract structure, and tenure-related patterns.
-- With more time: build a baseline classifier and quantify lift from targeted retention.
-
----
-
-## 7) Next Steps (Production-minded)
-
-- Add a lightweight baseline model (logistic regression)
-- Track churn rates over time by segment for drift
-- Define retraining schedule and monitoring metrics
-- Deploy batch scoring for weekly retention outreach lists
-
----
-
-## Appendix
-
-- Notebook: `notebooks/01_telco_churn_eda.ipynb`
-- Output tables: `outputs/tables/numeric_tests.csv`
-
+<section class="section">
+  <h2 class="section-title">Next Steps</h2>
+  <div class="panel">
+    <ul>
+      <li>Build a baseline classifier and measure uplift</li>
+      <li>Define cost-sensitive thresholds for retention actions</li>
+      <li>Monitor churn rates by segment for drift</li>
+    </ul>
+  </div>
+</section>
